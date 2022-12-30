@@ -1,0 +1,348 @@
+:root {
+    --color-dark-bg: #455a64;
+    --color-primary-text: #212121;
+    --color-light-prim: #cfd8dc;
+    --color-primary: #607d8b;
+    --color-text: #ffffff;
+    --color-accent: #607d8b;
+    --color-second-text: #757575;
+    --color-divider-block: #bdbdbd;
+    --color-ntext: #bdbdbd;
+  }
+  
+  html {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-size: 62.5%;
+  }
+  
+  .container-header {
+      max-width: 2000px;
+      margin: auto;
+    }
+  
+  .container {
+    max-width: 830px;
+    margin: auto;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald";
+  
+    background: linear-gradient(
+      180deg,
+      rgba(69, 90, 100, 1) 40%,
+      rgba(87, 110, 121, 1) 78%,
+      rgba(68, 96, 110, 1) 100%
+    );
+  }
+  
+  body,
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  .menu a {
+    color: var(--color-font);
+    text-decoration: none;
+    font-family: sans-serif;
+    border-radius: 10px;
+  }
+  
+  .menu a:hover {
+    background: var(--color-primary);
+    color: var(--color-button);
+  }
+  
+  .logo {
+    font-size: 2.5rem;
+  
+  }
+  
+  .header {
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(
+      180deg,
+      rgba(68, 96, 110, 1) 40%,
+      rgba(87, 110, 121, 1) 78%,
+      rgba(69, 90, 100, 1) 100%
+    );
+  }
+  
+  .header a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 3rem;
+  }
+  
+  .menu {
+    display: flex;
+    list-style: none;
+    font-size: 2.5rem;
+    gap: 0.5rem;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 0.5rem;
+    font-size: 2.5rem;
+  }
+  
+  .btn-mobile {
+    display: none;
+  }
+  
+  @media (max-width: 620px) {
+    .btn-mobile {
+      display: block;
+    }
+    .menu {
+      display: none;
+    }
+    .nav.active .menu {
+      display: flex;
+    }
+  }
+  
+  .section-perfil {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15rem;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .foto-perfil img {
+    width: 20rem;
+    height: 20rem;
+    margin-top: 2rem;
+    border-radius: 15rem;
+    filter: drop-shadow(5px 5px 5px #222);
+  }
+  
+  .perfil-title {
+    font-size: 1.5rem;
+    color: var(--color-ntext);
+    margin-top: 2rem;
+    text-align: center;
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+  
+  .btn-ctt-top {
+    background-color: var(--color-primary);
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 2.5rem;
+    color: var(--color-text);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+  }
+  
+  .btn-ctt-top a:hover {
+    background: var(--color-dark-bg);
+    color: var(--color-button);
+  }
+  
+  .btn-ctt-mid {
+    background-color: var(--color-primary);
+    display: inline-block;
+    padding: 1rem 3rem;
+    border-radius: 2.5rem;
+    color: var(--color-text);
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .hr3 {
+    margin-top: 2rem;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(
+      to right,
+      transparent,
+      #bdbdbd,
+      transparent
+    );
+  }
+  
+  .portfolio-title {
+    font-size: 2rem;
+    color: var(--color-text);
+    margin-top: 2rem;
+    text-align: center;
+  }
+  
+  .row-cards {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .card-img img {
+    width: 25rem;
+    height: auto;
+    margin-right: rem;
+    border-radius: 2.5rem;
+  }
+  
+  .portfolio-item {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-decoration: none;
+  }
+  
+  .row-cards {
+    align-items: center;
+    justify-content: center;
+    width: 25rem;
+  }
+  
+  .image-moviment {
+    position: relative;
+    overflow: hidden;
+    width: 600px;
+    height: auto;
+    margin: 100px;
+    border-radius: 1rem;
+  }
+  .image-moviment img {
+    max-width: 100%;
+    -moz-transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+  .image-moviment:hover img {
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    transform: scale(1.2);
+  }
+  
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 20px;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  
+  .social h3 {
+    color: var(--color-text);
+    font-weight: normal;
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  
+  .social h1 {
+    color: var(--color-text);
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .social img {
+    align-items: center;
+    width: 30px;
+    margin: 0 0.5rem 0 0.5rem;
+    margin-right: 0.5rem;
+  }
+  
+  .class-work {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+  }
+  
+  .enterprise img {
+    width: 50px;
+    height: auto;
+  }
+  
+  .class-exp {
+    font-weight: bold;
+    font-size: 2rem;
+    color: var(--color-light-prim);
+  }
+  
+  .contact-job {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+  }
+  
+  .contact-job h2 {
+    color: var(--color-text);
+    margin-right: 1rem;
+    font-size: 2rem;
+  }
+  
+
+  ul{
+      font-size: 2rem;
+  }
+  
+   li {
+      font-size: 1.6rem; 
+  }
+  
+  p {
+      font-size: 1.6rem; 
+      font-family: Arial, Helvetica, sans-serif;
+      margin-bottom: -1rem;
+  }
+  h1, h2 {
+      font-size: 2.4rem; 
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  h3 {
+      font-size: 2rem;
+      font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  
+  
+  form div {
+      margin: 1rem ;
+      border: 1rem;
+  }
+  
+  label {
+      margin-bottom: 0.5rem;
+      font-size: 1.4rem;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: rgb(37, 37, 37);
+  }
+  
+  input {
+      padding: 0.5rem;
+  }
+  
