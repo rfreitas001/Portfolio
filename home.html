@@ -14,9 +14,17 @@
   <body>
     <header class="header">
       <a class="logo" href="#">Rodrigo Freitas</a>
-      <nav class="nav">
-        <button class="btn-mobile">Menu</button>
-        <ul class="menu">
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
           <li class="nav-item"><a href="./home.html">Home</a></li>
           <li class="nav-item"><a href="./projects.html">Projetos</a></li>
           <li class="nav-item"><a href="./about-me.html">Sobre mim</a></li>
@@ -24,7 +32,6 @@
         </ul>
       </nav>
     </header>
-    <script src="./assets/js/script.js"></script>
     <!--Section-perfil-->
     <section class="section-perfil container">
       <div class="foto-perfil">
@@ -33,23 +40,29 @@
       <div class="perfil-title">
         <h2>
           Olá! Sou Rodrigo Freitas, sou formado em Análise e Desenvolvimento de
-          Sistemas na Universidade Anhanguera e cursando Pós Graduação em Engenharia de
-          Dados pela Universidade Anhanguera Pitágoras. <br> Hoje estou ingressando
-          ao mundo do Front-End. <br />
+          Sistemas na Universidade Anhanguera e cursando Pós Graduação em
+          Engenharia de Dados pela Universidade Anhanguera Pitágoras. <br />
+          Hoje estou ingressando ao mundo do Front-End. <br />
           Sempre tive o desejo de compreender esta área da técnologia e hoje
-          estou aprimorando estas soft-skills para agregar mais conhecimento
-          e contribuir de forma eficiente nos meus projetos.
+          estou aprimorando estas soft-skills para agregar mais conhecimento e
+          contribuir de forma eficiente nos meus projetos.
         </h2>
         <a class="btn-ctt-top" href="./contact.html">Entre em Contato</a>
-        <hr class="hr3">
+        <hr class="hr3" />
       </div>
     </section>
     <section>
-      <div>
-        
+      <div></div>
+    </section>
+    <!--Section-workers-->
+    <section>
+      <div class="workers container">
+        <h2>O que temos a oferecer</h2>
+        <div class="work"></div>
       </div>
     </section>
-    <hr class="hr3 container">
+    <!--Section-contact-->
+    <hr class="hr3 container" />
     <section>
       <div class="contact-job">
         <h2>
@@ -58,19 +71,29 @@
         </h2>
         <a class="btn-ctt-mid" href="./contact.html">Entre em Contato</a>
       </div>
-      <hr class="hr3 container">
+      <hr class="hr3 container" />
     </section>
 
     <footer>
       <div class="social">
         <h3>Minhas redes sociais</h3>
-            <div>
-                 <img src="./assets/images/social/instagram.svg" alt="https://www.instagram.com/rfreitas001/" />
-                 <img src="./assets/images/social/linkedin.svg" alt="https://www.linkedin.com/in/rfreitas001/" />
-                 <img src="./assets/images/social/facebook.svg" alt="https://www.facebook.com/Rodriggocorrea" />
-            </div>
+        <div>
+          <img
+            src="./assets/images/social/instagram.svg"
+            alt="https://www.instagram.com/rfreitas001/"
+          />
+          <img
+            src="./assets/images/social/linkedin.svg"
+            alt="https://www.linkedin.com/in/rfreitas001/"
+          />
+          <img
+            src="./assets/images/social/facebook.svg"
+            alt="https://www.facebook.com/Rodriggocorrea"
+          />
+        </div>
         <h1>Desenvolvido por Rodrigo Freitas</h1>
       </div>
     </footer>
+    <script src="./assets/js/script.js"></script>
   </body>
 </html>

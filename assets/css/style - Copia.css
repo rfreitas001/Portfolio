@@ -136,7 +136,7 @@ ul {
   #menu a:hover {
     background: var(--color-dark-bg);
     color: var(--color-button);
-    width: auto;
+    width: 50rem;
     height: auto;
     
   }
@@ -176,6 +176,9 @@ ul {
     top: -7px;
   }
 
+  .section-perfil {
+    margin-top: 200px;
+  }
 }
 
 .section-perfil {
