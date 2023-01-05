@@ -14,9 +14,17 @@
   <body>
     <header class="header">
       <a class="logo" href="#">Rodrigo Freitas</a>
-      <nav class="nav">
-        <button class="btn-mobile">Menu</button>
-        <ul class="menu">
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
           <li class="nav-item"><a href="./home.html">Home</a></li>
           <li class="nav-item"><a href="./projects.html">Projetos</a></li>
           <li class="nav-item"><a href="./about-me.html">Sobre mim</a></li>
@@ -59,5 +67,6 @@
         <footer>
 			<p>Desenvolvido por Rodrigo Freitas</p>
 		</footer>
+    <script src="./assets/js/script.js"></script>
     </body>
 </html>

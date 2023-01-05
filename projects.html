@@ -1,27 +1,38 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <title> CV - Rodrigo Alves Corrêa de Freitas</title>    
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IR=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap" rel="stylesheet">
-    </head>
-    <body>
-        <header class="header ">
-            <a class="logo" href="#">Rodrigo Freitas</a>
-            <nav class="nav">
-                <button class="btn-mobile">Menu</button>
-                <ul class="menu">
-                    <li class="nav-item"><a href="./home.html">Home</a></li>
-                    <li class="nav-item"><a href="./projects.html">Projetos</a></li>
-                    <li class="nav-item"><a href="./about-me.html">Sobre mim</a></li>
-                    <li class="nav-item"><a href="./contact.html">Contato</a></li>
-                </ul>
-            </nav>
-        </header>
-        <script src="./assets/js/script.js"></script>
+  <head>
+    <title>CV - Rodrigo Alves Corrêa de Freitas</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IR=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <a class="logo" href="#">Rodrigo Freitas</a>
+      <nav id="nav">
+        <button
+          aria-label="Abrir Menu"
+          id="btn-mobile"
+          aria-haspopup="true"
+          aria-controls="menu"
+          aria-expanded="false"
+        >
+          <span id="hamburger"></span>
+        </button>
+        <ul id="menu" role="menu">
+          <li class="nav-item"><a href="./home.html">Home</a></li>
+          <li class="nav-item"><a href="./projects.html">Projetos</a></li>
+          <li class="nav-item"><a href="./about-me.html">Sobre mim</a></li>
+          <li class="nav-item"><a href="./contact.html">Contato</a></li>
+        </ul>
+      </nav>
+    </header>
+
             <!--SECTION-1-->
     <section class="section-perfil container">
         <div class="foto-perfil">
@@ -148,6 +159,7 @@
             <img src="./assets/images/social/facebook.png" alt="#">
         </div>
     </footer>
+    <script src="./assets/js/script.js"></script>
     </body>
     
 </html>
