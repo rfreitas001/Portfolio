@@ -1,0 +1,94 @@
+html {
+    margin: 0;
+    padding: 0;
+    font-family: serif;
+    font-size: 62.5%;
+  }
+
+  ul {
+      font-size: 20px;
+  }
+  
+  ul li {
+      font-size: 0.8em; 
+      font-size: 1.6rem; 
+      width: 80%;
+      height: 3rem; 
+  }
+  
+  p {
+      font-size: 1.6rem; 
+  }
+  
+  
+  
+  h2 {
+      font-size: 2rem; 
+      height: 3rem;
+  }
+  
+ 
+  
+  .navegacao li {
+      border-bottom: 1px solid #ccc;
+      display: block;
+      padding: 1rem 1rem 2rem 1rem;
+      line-height: 1.2rem;
+  }
+  
+  .navegacao a {
+      color: #v;
+      display: block;
+      margin-bottom: .5rem;
+      width: 100%;
+  }
+  
+  form {
+      background: #eee;
+      padding: 10px;
+  }
+  
+  form div {
+      background: #fff;
+      border-bottom: 1px solid #33f;
+      margin: 1rem;
+      padding: 2rem;
+  }
+  
+  label {
+      margin-bottom: 1rem;
+      font-size: 1.4rem; 
+      font-family: sans-serif;
+      font-weight: bold;
+      color: #66F;
+  }
+  
+  input {
+      padding: 1rem;
+  }
+  
+  [type="text"], [type="email"], textarea, label {
+      display: block;
+      width: 100%;
+  }
+  
+  article {
+    float: left;
+    padding: 20px;
+    width: 70%;
+  }
+  
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+  }
+  
+  
