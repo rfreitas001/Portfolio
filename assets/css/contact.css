@@ -1,94 +1,280 @@
-html {
+:root {
+    --color-dark-bg: #455a64;
+    --color-primary-text: #212121;
+    --color-light-prim: #cfd8dc;
+    --color-primary: #607d8b;
+    --color-text: #ffffff;
+    --color-accent: #607d8b;
+    --color-second-text: #757575;
+    --color-divider-block: #bdbdbd;
+    --color-ntext: #bdbdbd;
+  }
+  
+  html {
     margin: 0;
     padding: 0;
     font-family: serif;
     font-size: 62.5%;
   }
-
+  
+  #nav {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: var(--color-text);
+  }
+  
+  
+  .container {
+    max-width: 830px;
+    margin: auto;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald";
+  
+    background: linear-gradient(
+      180deg,
+      rgba(69, 90, 100, 1) 40%,
+      rgba(87, 110, 121, 1) 78%,
+      rgba(68, 96, 110, 1) 100%
+    );
+  }
+  
+  body,
   ul {
-      font-size: 20px;
+    margin: 0px;
+    padding: 0px;
   }
   
-  ul li {
-      font-size: 0.8em; 
-      font-size: 1.6rem; 
-      width: 80%;
-      height: 3rem; 
+  #menu a {
+    color: var(--color-font);
+    text-decoration: none;
+    font-family: sans-serif;
+    border-radius: 10px;
   }
   
-  p {
-      font-size: 1.6rem; 
+  #menu a:hover {
+    background: var(--color-primary);
+    color: var(--color-button);
   }
   
-  
-  
-  h2 {
-      font-size: 2rem; 
-      height: 3rem;
+  .header {
+    height: 70px;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(
+      180deg,
+      rgba(68, 96, 110, 1) 40%,
+      rgba(87, 110, 121, 1) 78%,
+      rgba(69, 90, 100, 1) 100%
+    );
   }
   
- 
-  
-  .navegacao li {
-      border-bottom: 1px solid #ccc;
-      display: block;
-      padding: 1rem 1rem 2rem 1rem;
-      line-height: 1.2rem;
+  .header a {
+    color: var(--color-text);
+    text-decoration: none;
+    font-size: 3rem;
   }
   
-  .navegacao a {
-      color: #v;
-      display: block;
-      margin-bottom: .5rem;
-      width: 100%;
+  #menu {
+    display: flex;
+    list-style: none;
+    font-size: 2.5rem;
+    gap: 0.5rem;
+    margin-right: 2rem;
   }
   
-  form {
-      background: #eee;
-      padding: 10px;
+  #menu a {
+    display: block;
+    padding: 0.5rem;
+    font-size: 2.5rem;
   }
   
-  form div {
-      background: #fff;
-      border-bottom: 1px solid #33f;
-      margin: 1rem;
-      padding: 2rem;
+  #btn-mobile {
+    display: none;
+  }
+
+  .area-form {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: -20px;
   }
   
-  label {
-      margin-bottom: 1rem;
-      font-size: 1.4rem; 
-      font-family: sans-serif;
-      font-weight: bold;
-      color: #66F;
+  .area-form h2 {
+    color: var(--color-font);
+    text-transform: uppercase;
+    text-align: center;
+    margin-left: 1rem;
+    margin-left: 1rem;
   }
   
-  input {
-      padding: 1rem;
+  .div-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+  }
+
+  label{
+    color: var(--color-font);
+    text-transform: uppercase;
   }
   
-  [type="text"], [type="email"], textarea, label {
-      display: block;
-      width: 100%;
+  .formulario form {
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    height: 350px;
+    align-items: center;
+  
+  }
+  .formulario input {
+    margin-top: 15px;
+    padding-left: 10px;
+    width: 400px;
+    height: 40px;
+    border: none;
+    outline: none;
+    font-family: "Oswald";
+    border-radius: 5px;
+    text-transform: uppercase;
   }
   
-  article {
-    float: left;
-    padding: 20px;
-    width: 70%;
+  input ::placeholder {
+    color: var(--);
+    text-transform: uppercase;
   }
   
-  section::after {
-    content: "";
-    display: table;
-    clear: both;
+  input[type="submit"] {
+  
+    background-color: var(--color-ntext);
+    border-radius: 25px;
+    color: var(--color-primary-text);
+    text-transform: uppercase;
+    font-size: 16px;
+    height: 55px;
+    width: 200px;
+    font-weight: bold;
+    cursor: pointer;
+    
+  }
+
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 5rem;
+    margin-bottom: 20px;
+  }
+  .social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
   }
   
-  @media (max-width: 600px) {
-    nav, article {
-      width: 100%;
-      height: auto;
-    }
+  .social h3 {
+    color: var(--color-text);
+    font-weight: normal;
+    text-align: center;
+    font-size: 2.3rem;
   }
   
+  .social h1 {
+    color: var(--color-text);
+    font-weight: normal;
+    text-align: center;
+    font-size: 1.3rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
   
+  .social img {
+    align-items: center;
+    width: 30px;
+    margin: 0 0.5rem 0 0.5rem;
+    margin-right: 0.5rem;
+  }
+
+   
+   @media (max-width: 680px) {
+     #menu {
+       display: block;
+       position: absolute;
+       width: 100%;
+       top: 70px;
+       right: 0px;
+       background-color: var(--color-accent);
+       color: var(--color-text);
+       transition: 0.6s;
+       z-index: 1000;
+       height: 0px;
+       visibility: hidden;
+       overflow-y: hidden;
+       border-radius: 1rem;
+     }
+     #nav.active #menu {
+       height: auto;
+       width: auto;
+       visibility: visible;
+       overflow-y: auto;
+     }
+     #menu a {
+       padding: 1rem 0;
+       margin: 0 1rem;
+       border-bottom: 2px solid rgba(0, 0, 0, 0.05);
+     }
+   
+     #menu a:hover {
+       background: var(--color-dark-bg);
+       color: var(--color-button);
+       width: auto;
+       height: auto;
+       
+     }
+     #btn-mobile {
+       display: flex;
+       padding: 0.5rem 1rem;
+       font-size: 1rem;
+       border: none;
+       background: none;
+       cursor: pointer;
+       gap: 0.5rem;
+     }
+     #hamburger {
+       border-top: 2px solid;
+       width: 20px;
+       color: var(--color-text)
+     }
+     #hamburger::after,
+     #hamburger::before {
+       content: "";
+       display: block;
+       width: 20px;
+       height: 2px;
+       background: currentColor;
+       margin-top: 5px;
+       transition: 0.3s;
+       position: relative;
+     }
+     #nav.active #hamburger {
+       border-top-color: transparent;
+     }
+     #nav.active #hamburger::before {
+       transform: rotate(135deg);
+     }
+     #nav.active #hamburger::after {
+       transform: rotate(-135deg);
+       top: -7px;
+     }
+   
+     
+   }

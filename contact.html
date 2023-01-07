@@ -5,7 +5,6 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IR=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
     <link rel="stylesheet" type="text/css" href="./assets/css/contact.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap"
@@ -33,42 +32,30 @@
         </ul>
       </nav>
     </header>
-    <article>
-      <h1>Contato</h1>
-      <form action="https://formspree.io/f/xdovnbbn" method="post">
-        <div>
-          <label for="nome">Nome</label><br />
-          <input
-            type="text"
-            name="nome"
-            id="nome"
-            placeholder="Digite seu nome"
-          />
-        </div>
-        <div>
-          <label for="email">E-mail</label><br />
-          <input
-            type="email"
-            name="email"
-            id="email"
-            placeholder="Digite seu email"
-          />
-        </div>
-
-        <div>
-          <label for="mensagem">Mensagem</label><br />
-          <textarea
-            name="mensagem"
-            id="mensagem"
-            rows="5"
-            placeholder="Digite sua mensagem"
-          ></textarea>
-        </div>
-        <div>
-          <input type="submit" />
-        </div>
-      </form>
-    </article>
+    <!--form-->
+    
+    <div class="area-form">
+      <h2>Receba o nosso conteúdo de forma gratuita em seu email.</h2>
+      <div class="formulario">
+          <div class="div-form">
+            <form action="https://formspree.io/f/xdovnbbn" method="post">
+                <label for="nome">Nome</label><br />
+                  <input type="text" name="nome" placeholder="Seu nome">
+                  <label for="email">E-mail</label><br />
+                  <input type="email" name="email" placeholder="Seu email">
+                  <label for="mensagem">Mensagem</label><br />
+                  <textarea
+                    name="mensagem"
+                    id="mensagem"
+                    rows="5"
+                    placeholder="Digite sua mensagem"
+                  ></textarea>
+                  <input type="submit" value="Enviar">
+              </form>
+          </div>
+      </div>
+  </div>
+   
     <footer>
       <div class="social">
         <h3>Minhas redes sociais</h3>

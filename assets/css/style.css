@@ -211,6 +211,12 @@ ul {
   color: var(--color-text);
 }
 
+.pelicula{
+
+  margin-top: -8rem;
+
+}
+
 .portfolio-title {
   font-size: 2rem;
   color: var(--color-text);
@@ -222,7 +228,7 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .card-img img {
