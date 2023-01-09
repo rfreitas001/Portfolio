@@ -61,6 +61,8 @@
     color: var(--color-button);
   }
   
+
+
   .header {
     height: 70px;
     padding: 1rem;
@@ -326,7 +328,7 @@
     
     
     input {
-      width: 40rem;
+      width: 20rem;
     }
   
     input ::placeholder {
@@ -336,16 +338,16 @@
     
     [type="text"], [type="email"], textarea, label {
       display: block;
-      width: 30rem;
+      width: 26rem;
     }
   
     #mensagem {
-      width: 30rem;
+      width: 26rem;
     }
   
     .btn-env {
       font-size: 1.6rem;
-      margin-top: 1rem;
+      margin-top: 2rem;
       height: 5.5rem;
       width: 10rem;
       font-weight: bold;

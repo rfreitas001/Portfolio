@@ -35,22 +35,29 @@
     <!--form-->
     <section>
       <div class="area area-form container">
-        <h2>Para saber um pouco mais sobre os meus serviços, preencha o formuário abaixo.</h2>
-        <div class="form form-formulario">
+        <h2>
+          Para saber um pouco mais sobre os meus serviços, preencha o formuário
+          abaixo.
+        </h2>
+        <div class="form form-formulario container">
           <form action="https://formspree.io/f/xdovnbbn" method="post">
-              <label class="lbl-label" for="nome">Nome</label><br />
-              <input type="text" name="nome" placeholder="Digite seu nome" />
-              <label class="label lbl-label" for="email">E-mail</label><br />
-              <input type="email" name="email" placeholder="Digite seu email" />
-              <label class="lbl-label" for="mensagem">Mensagem</label><br />
-              <textarea
-                name="mensagem"
-                id="mensagem"
-                rows="5"
-                placeholder="Digite sua mensagem"
-              >
-              </textarea>
-              <input class="btn-env" type="submit" value="Enviar" />
+            <label class="lbl-label" for="nome">Nome</label><br />
+            <input type="text" name="nome" placeholder="Digite seu nome" />
+            <label class="label lbl-label" for="email">E-mail</label><br />
+            <input type="email" name="email" placeholder="Digite seu email" />
+            <label class="lbl-label" for="mensagem">Mensagem</label><br />
+            <textarea
+              name="mensagem"
+              id="mensagem"
+              rows="5"
+              placeholder="Digite sua mensagem"
+            ></textarea>
+            <input
+              class="btn-env"
+              type="submit"
+              value="Enviar"
+              onclick="msg()"
+            />
           </form>
         </div>
       </div>
